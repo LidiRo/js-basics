@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS-Basic</title>
+</head>
+<body onmousemove="getCoordinatesFunction(event)" onmouseout="clearCoor()">
+    <!-- TASK 1 -->
+    <section>
+        <h1>1</h1>
+        <hr class="line">
+        <div id="parent">
+            <div id="black-square"></div>
+        </div>
+    
+        <div class="buttons-remove">
+            <button onclick="document.getElementById('black-square').style.display='none'" class="button-remove-1">Remove-1</button>
+            <button id="button-remove-2" class="button-remove-2">Remove-2</button>
+            <button id="button-remove-3" class="hidden">Remove-3</button>
+        </div>
+
+    </section>
+    <hr>
+
+    <!-- TASK 2 -->
+    <section>
+        <h1>2</h1>
+        <hr class="line">
+        <div id="parent">
+            <div id="black-square-2"></div>
+        </div>
+        <button id="button-2" onclick="hideAndReturnSquares1()">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 3 -->
+    <section>
+        <h1>3</h1>
+        <hr class="line">
+        <div id="squares" class="squares">
+            <div class="black-square-3"></div>
+            <div class="black-square-3"></div>
+            <div class="black-square-3"></div>
+            <div class="black-square-3"></div>
+            <div class="black-square-3"></div>
+        </div>
+        <button id="button-3" onclick="hideAndReturnSquares()">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 4 -->
+    <section class="task-4">
+        <h1>4</h1>
+        <hr class="line">
+        <div id="blue-squares" class="squares">
+            <div id="blue-square-1"></div>
+            <div id="blue-square-2"></div>
+            <div id="blue-square-3"></div>
+            <div id="blue-square-4"></div>
+            <div id="blue-square-5"></div>
+        </div>
+        <div id="inputs">
+            <label for="input-task-4">Введи css selector</label><br>
+            <input type="text" id="input-task-4" name="input-task-4">
+        </div>
+        <button id="button-4" onclick="hideBlueSquare()">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 5 -->
+    <section>
+        <h1>5</h1>
+        <hr class="line">
+        <div id="yellow-square" onclick="clickFunction()"></div>
+    </section>
+    <hr>
+
+    <!-- TASK 6 -->
+    <section>
+        <h1>6</h1>
+        <hr class="line">
+        <div id="red-square"></div>
+        <button id="button-6">Mouseover me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 7 -->
+    <section>
+        <h1>7</h1>
+        <hr class="line">
+        <div id="green-rectangle"></div>
+        <label for="nameInput">Input</label><br>
+        <input type="text" id="nameInput" name="nameInput">
+    </section>
+    <hr>
+
+    <!-- TASK 8 -->
+    <section>
+        <h1>8</h1>
+        <hr class="line">
+        <label for="nameInput2">Input</label><br>
+        <input type="text" id="nameInput2" name="nameInput2">
+        <button id="button-7" onclick="openImageFunction()">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 9 -->
+    <section class="task-9">
+        <h1>9</h1>
+        <hr class="line">
+        <label for="nameInput2">Input</label><br>
+        <textarea name="nameTextarea" id="nameTextarea" cols="80" rows="8"></textarea>
+        <button id="button-8" onclick="openImagesFunction()">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 10, 11, 12 -->
+    <section class="task-10">
+        <div id="coordinates"></div>
+        <div id="language"></div>
+        <div id="geolocation"></div>
+    </section>
+
+    <!-- TASK 13 -->
+    <section>
+        <h1>13</h1>
+        <hr class="line">
+        <div class="inputs">
+            <div>
+                <label for="input1">Використання localStorage</label><br>
+                <input type="text" id="input1" name="input1">
+            </div>
+
+            <div>
+                <label for="input2">Використання cookies</label><br>
+                <input type="text" id="input2" name="input2">
+            </div>
+
+            <div>
+                <label for="input3">Використання sessionStorage</label><br>
+                <input type="text" id="input3" name="input3">
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- TASK 14 -->
+    <section class="task-14">
+        <button onclick="toTopFunction()" id="button-14">ВГОРУ</button>
+    </section>
+
+    <!-- TASK 15 -->
+    <section class="task-15">
+        <h1>15</h1>
+        <hr class="line">
+        <div id="block-1">
+            <div id="block-2"></div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- TASK 16 -->
+    <section class="task-16">
+        <h1>16</h1>
+        <hr class="line">
+        <div id="gray-background"></div>
+        <button onclick="addGrayBackground()" id="button-16">Click me</button>
+    </section>
+    <hr>
+
+    <!-- TASK 17 -->
+    <section class="task-17">
+        <h1>17</h1>
+        <hr class="line">
+        <form><input type="submit" value="GO" onclick="event.preventDefault()"></form>
+    </section>
+    <hr>
+
+    <!-- TASK 18 -->
+    <section class="task-18">
+        <h1>18</h1>
+        <hr class="line">
+        <div id="drop-area">
+            <form class="my-form">
+                <p>Завантажте зображення за допомогою діалогу вибору файлів або перетягнувши потрібні зображення у виділену область</p>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <label class="button-task-18" for="fileElem">Вибрати зображення</label>
+            </form>
+            <div id="gallery"></div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
